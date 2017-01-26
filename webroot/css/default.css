@@ -903,7 +903,7 @@ body.page-container-boxed .page-container {
 .x-navigation > li.xn-logo > a:first-child {
   font-size: 0px;
   text-indent: -9999px;
-  background: url("../img/logo.png") top center no-repeat #e34724;
+  background: url("../img/logo.png") top center no-repeat #ce4f05;
   padding: 0px;
   border-bottom: 0px;
   color: #FFF;
@@ -4924,6 +4924,7 @@ td.dataTables_empty {
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
   z-index: 3;
+  display: none;
 }
 .theme-settings .ts-button {
   position: absolute;
@@ -4940,6 +4941,7 @@ td.dataTables_empty {
   line-height: 34px;
   text-align: center;
   cursor: pointer;
+  display: none;
 }
 .theme-settings .ts-body {
   width: 200px;

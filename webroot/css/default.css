@@ -14,6 +14,10 @@
 @import "dropzone/dropzone.css";
 @import "animate/animate.min.css";
 
+/******** Custom Styles *********/
+
+
+
 /* PREDEFINED CLASSES */
 .clearfix {
   zoom: 1;
@@ -1154,7 +1158,7 @@ body.page-container-boxed .page-container {
 /* END PROFILE */
 /* BLOCK */
 .block {
-  padding: 5px 10px;
+  /*padding: 5px 10px;*/
   float: left;
   width: 100%;
   margin-bottom: 20px;
@@ -3153,6 +3157,7 @@ blockquote.pull-right {
   padding: 0px 0px 5px;
   border-bottom: 1px solid #E5E5E5;
   font-size: 12px;
+  display: none;
 }
 .dataTables_length label,
 .dataTables_filter label {

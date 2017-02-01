@@ -66,7 +66,9 @@ $cakeDescription = 'LIH - HRMS';
                             </div>
                         </div>
                     </li>
-                    <!--<li class="xn-title">Navigation</li>-->
+                    <?php
+                        echo $this->element('menu', ["curcontrol" => $this->request->controller]); ?>
+                    <!--<li class="xn-title">Navigation</li>
                     <li>
                         <a href="#"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
                     </li>
@@ -87,7 +89,7 @@ $cakeDescription = 'LIH - HRMS';
                     </li>
                     <li>
                         <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Admin</span></a>
-                    </li>
+                    </li>-->
                 </ul>
                 <!-- END X-NAVIGATION -->
             </div>
@@ -111,13 +113,13 @@ $cakeDescription = 'LIH - HRMS';
                 </ul>
                 <!-- END X-NAVIGATION VERTICAL -->
 
-                <!-- PAGE TITLE -->
+                <!-- PAGE TITLE
                 <div class="page-title">
                     <h2>Declaration</h2>
                     <div class="pull-right">
                         <button class="btn btn-default content-frame-left-toggle"><span class="fa fa-bars"></span> Options</button>
                     </div>
-                </div>
+                </div>-->
 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
@@ -125,8 +127,8 @@ $cakeDescription = 'LIH - HRMS';
                     <div class="row">
                         <div class="col-md-12">
                             <?= $this->Flash->render() ?>
-                            <div class="container clearfix">
-                            <?= $this->fetch('content') ?>
+                            <div>
+                                <?= $this->fetch('content') ?>
                             </div>
                         </div>
                     </div>
@@ -155,6 +157,7 @@ $cakeDescription = 'LIH - HRMS';
             <!-- THIS PAGE PLUGINS -->
 <?= $this->Html->script('plugins/icheck/icheck.min'); ?>
 <?= $this->Html->script('plugins/mcustomscrollbar/jquery.mCustomScrollbar.min'); ?>
+<?= $this->Html->script('plugins/datatables/jquery.dataTables.min'); ?>
 
 <?= $this->Html->script('plugins/bootstrap/bootstrap-datepicker'); ?>
 <?= $this->Html->script('plugins/bootstrap/bootstrap-timepicker.min'); ?>

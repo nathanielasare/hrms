@@ -20,7 +20,7 @@ $cakeDescription = 'LIH - HRMS';
     <div class="row">
         <!-- PAGE TITLE -->
         <div class="page-title" style="margin-top: 10px">
-            <h2>User Management</h2>
+            <h2>Personal Information Management</h2>
             <div class="pull-right" style="margin-top: 3px">
                 <button class="btn btn-default content-frame-left-toggle"><span class="fa fa-bars"></span> Options</button>
             </div>

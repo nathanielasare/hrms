@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,500,600,700&subset=latin,latin-ext);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,500,600,700&subset=latin,latin-ext);*/
+@import "sans.css";
 @import "jquery/jquery-ui.min.css";
 @import "bootstrap/bootstrap.min.css";
 @import "fontawesome/font-awesome.min.css";
@@ -13,6 +14,9 @@
 @import "rickshaw/rickshaw.css";
 @import "dropzone/dropzone.css";
 @import "animate/animate.min.css";
+
+
+
 
 /******** Custom Styles *********/
 
@@ -6929,7 +6933,7 @@ ul.jqueryFileTree a {
 ul.jqueryFileTree a:hover {
   background: #E9EDF1;
 }
-li.directory {
+/*li.directory {
   background: url(../img/filetree/directory.png) left top no-repeat;
 }
 li.expanded {
@@ -6941,7 +6945,7 @@ li.file {
 li.wait {
   background: url(../img/filetree/spinner.gif) left top no-repeat;
 }
-/* File Extensions*/
+/* File Extensions*
 li.ext_3gp {
   background: url(../img/filetree/film.png) left top no-repeat;
 }

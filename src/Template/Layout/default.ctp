@@ -52,7 +52,7 @@ $cakeDescription = 'LIH - HRMS';
                 <!-- START X-NAVIGATION -->
                 <ul class="x-navigation">
                     <li class="xn-logo">
-                        <a href="#">LIH-SW</a>
+                        <a href="#"> </a>
                         <a href="#" class="x-navigation-control"></a>
                     </li>
                     <li class="xn-profile">
@@ -66,30 +66,10 @@ $cakeDescription = 'LIH - HRMS';
                             </div>
                         </div>
                     </li>
-                    <?php
-                        echo $this->element('menu', ["curcontrol" => $this->request->controller]); ?>
-                    <!--<li class="xn-title">Navigation</li>
-                    <li>
-                        <a href="#"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">PIM</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-th"></span> <span class="xn-text">Leave</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-dot-circle-o"></span> <span class="xn-text">Recruitment</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-check-square-o"></span> <span class="xn-text">Performance</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-credit-card"></span> <span class="xn-text">Payroll</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Admin</span></a>
-                    </li>-->
+
+                    <!-- Menu Element -->
+                    <?php echo $this->element('menu', ["curcontrol" => $this->request->controller]); ?>
+
                 </ul>
                 <!-- END X-NAVIGATION -->
             </div>
@@ -142,41 +122,45 @@ $cakeDescription = 'LIH - HRMS';
             <!-- END MESSAGE BOX-->
 
             <!-- START PRELOADS --
-<?= $this->Html->media('audio.mp3') ?>
+            <?= $this->Html->media('audio.mp3') ?>
             <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
             <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
             <!-- END PRELOADS -->
 
             <!-- START SCRIPTS -->
             <!-- START PLUGINS -->
-<?= $this->Html->script('plugins/jquery/jquery.min'); ?>
-<?= $this->Html->script('plugins/jquery/jquery-ui.min'); ?>
-<?= $this->Html->script('plugins/bootstrap/bootstrap.min'); ?>
+            <?= $this->Html->script('plugins/jquery/jquery.min'); ?>
+            <?= $this->Html->script('plugins/jquery/jquery-ui.min'); ?>
+            <?= $this->Html->script('plugins/bootstrap/bootstrap.min'); ?>
             <!-- END PLUGINS -->
 
             <!-- THIS PAGE PLUGINS -->
-<?= $this->Html->script('plugins/icheck/icheck.min'); ?>
-<?= $this->Html->script('plugins/mcustomscrollbar/jquery.mCustomScrollbar.min'); ?>
-<?= $this->Html->script('plugins/datatables/jquery.dataTables.min'); ?>
+            <?= $this->Html->script('plugins/icheck/icheck.min'); ?>
+            <?= $this->Html->script('plugins/mcustomscrollbar/jquery.mCustomScrollbar.min'); ?>
+            <?= $this->Html->script('plugins/datatables/jquery.dataTables.min'); ?>
 
-<?= $this->Html->script('plugins/bootstrap/bootstrap-datepicker'); ?>
-<?= $this->Html->script('plugins/bootstrap/bootstrap-timepicker.min'); ?>
-<?= $this->Html->script('plugins/bootstrap/bootstrap-colorpicker'); ?>
-<?= $this->Html->script('plugins/bootstrap/bootstrap-file-input'); ?>
-<?= $this->Html->script('plugins/bootstrap/bootstrap-select'); ?>
+            <?= $this->Html->script('plugins/morris/raphael-min'); ?>
+            <?= $this->Html->script('plugins/morris/morris.min'); ?>
 
-<?= $this->Html->script('plugins/tagsinput/jquery.tagsinput.min'); ?>
-<?= $this->Html->script('plugins/maskedinput/jquery.maskedinput.min'); ?>
+            <?= $this->Html->script('plugins/bootstrap/bootstrap-datepicker'); ?>
+            <?= $this->Html->script('plugins/bootstrap/bootstrap-timepicker.min'); ?>
+            <?= $this->Html->script('plugins/bootstrap/bootstrap-colorpicker'); ?>
+            <?= $this->Html->script('plugins/bootstrap/bootstrap-file-input'); ?>
+            <?= $this->Html->script('plugins/bootstrap/bootstrap-select'); ?>
 
-<?= $this->Html->script('plugins/smartwizard/jquery.smartWizard-2.0.min.js'); ?>
-<?= $this->Html->script('plugins/jquery-validation/jquery.validate'); ?>
+            <?= $this->Html->script('plugins/tagsinput/jquery.tagsinput.min'); ?>
+            <?= $this->Html->script('plugins/maskedinput/jquery.maskedinput.min'); ?>
+
+            <?= $this->Html->script('plugins/smartwizard/jquery.smartWizard-2.0.min.js'); ?>
+            <?= $this->Html->script('plugins/jquery-validation/jquery.validate'); ?>
             <!-- END PAGE PLUGINS -->
 
             <!-- START TEMPLATE -->
-<?= $this->Html->script(['settings', 'plugins', 'actions']); ?>
+            <?= $this->Html->script(['settings', 'plugins', 'actions','dash_charts']); ?>
+
             <!-- END TEMPLATE -->
 
             <!-- END SCRIPTS -->
-
+        </div>
     </body>
 </html>

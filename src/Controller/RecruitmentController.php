@@ -72,4 +72,9 @@ class RecruitmentController extends AppController
     {
         //return $this->redirect('/');
     }
+
+    public function add()
+    {
+
+    }
 }

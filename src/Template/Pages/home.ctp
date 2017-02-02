@@ -56,7 +56,7 @@ $cakeDescription = 'LIH - HRMS';
         <div style="padding-bottom: 30px;text-align: center;"><?= $this->Html->image('mlogo.png') ?></div>
         <div class="login-body">
             <div class="login-title">Login</div>
-            <form action="admin" class="form-horizontal" method="post">
+            <form action="dashboard" class="form-horizontal" method="post">
                 <div class="form-group">
                     <div class="col-md-12">
                         <input type="text" class="form-control" placeholder="Username"/>
